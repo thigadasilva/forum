@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+body{
+    background-color: grey;
+}
+header{
+    background-color: #1B3319;
+    height: 120px;
+    padding: 20px;
+    color: white;
+}
+header img{
+    border-radius: 100%;
+    width: 100px;
+}
+header a{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: goldenrod;
+    border-radius: 10px;
+}
+header nav{
+    margin-left: 70em;
+    margin-top: -5em;
+}
+input{
+    margin-left: 70em;
+}
+section{
+    width: 50em;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 5em;
+    padding: 10px;
+    height: 400px;
+}
+aside{
+    background-color: white;
+    width: 27em;
+    height: 150px;
+    margin-left: 55em;
+    margin-top: -30em;
+    border-radius: 10px;
+}
+section#caixa2{
+    background-color: white;
+    width: 26em;
+    height: 150px;
+    margin-left: 55em;
+    margin-top: 10px;
+}
+section#lula{
+    background-color: white;
+    width: 26em;
+    height: 150px;
+    margin-left: 55em;
+    margin-top: 20px;
+}
