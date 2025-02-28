@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-   
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -12,6 +12,9 @@ header{
     height: 120px;
     padding: 20px;
     color: white;
+}
+header{
+    text-shadow: 3px 1px 1px black;
 }
 header img{
     border-radius: 100%;
