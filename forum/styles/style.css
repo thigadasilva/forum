@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+Pequenas telas: 600px max
+Celular: 600 até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+/* Mobile First */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: grey;
+}
+header{
+    background-color: #1B3319;
+    height: 100%;
+    width: 84%;
+    padding: 40px;
+    text-shadow: 3px 1px 1px black;
+    color: white;
+}
+header input{
+    display: none;
+}
+header img{
+    display: none;
+}
+header a{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: goldenrod;
+    border-radius: 10px;
+}
+header nav{
+    margin-left: 20em;
+    margin-top: -1em;
+}
+
+section{
+    width: 90vw;
+    background-color: white;
+    margin-top: 1em;
+    padding: 10px;
+    height: 400px;
+}
+aside{
+    background-color: white;
+    width: 27em;
+    height: 150px;
+    margin-left: 55em;
+    margin-top: -30em;
+    border-radius: 10px;
+    display: none;
+}
+section#caixa2{
+    background-color: white;
+    width: 26em;
+    height: 150px;
+    margin-left: 55em;
+    margin-top: 10px;
+    display: none;
+}
+section#lula{
+    background-color: white;
+    width: 26em;
+    height: 150px;
+    margin-left: 55em;
+    margin-top: 20px;
+    display: none;
+}
+
+
