@@ -16,7 +16,7 @@ header{
 }
 header img{
     border-radius: 100%;
-    width: 100px;
+   
 }
 
 header nav{
@@ -40,38 +40,37 @@ section{
         height: 120px;
         padding: 20px;
         color: white;
-    }
-    header img{
-        border-radius: 100%;
-        width: 100px;
-    }
-    
-    header nav{
-        margin-left: 70em;
-        margin-top: -5em;
-    }
-    input{
-        margin-left: 70em;
+        box-sizing: border-box;
     }
     section{
-        width: 50em;
-        height: 400px;
-        margin-left: 20px;
-        margin-top: 5em;
+        width: 90%;
+        height: 100%;
+        margin-left: -2%;
+        margin-top: -2%;
         padding: 10px;
     }
 }
+
 @media screen and (max-width: 991px) {
+    section{
+        width: 90%;
+        height: 100%;
+        margin-left: 3%;
+        margin-top: -2%;
+    }
+
+
     aside{
         display: none;
     }    
 }
 @media screen and (min-width: 992px) {
     header{
-        height: 50px;
-        width: 97vw;
-        padding: 50px;
+        
+        width: 100%;
+        padding: 35px;
         color: white;
+        box-sizing: border-box;
     }
     header img{
         border-radius: 100%;
@@ -85,18 +84,18 @@ section{
     }
     
     nav{
-        margin-left: 70em;
+        margin-left: 60%;
         margin-top: -5em;
     }
     input{
         margin-left: 70em;
-        display: flex;
+        display: block;
     }
     section{
         width: 50em;
         height: 400px;
-        margin-left: 20px;
-        margin-top: 5em;
+        margin-left: -1px;
+        margin-top: -1%;
         padding: 10px;
     }
   aside{
@@ -105,13 +104,13 @@ section{
     aside#caixa1{
             width: 30em;
             height: 100%;
-            margin-left: 65em;
-            margin-top: -25em;
+            margin-left: 60%;
+            margin-top: -26%;
         }
     aside#caixa2{
             width: 30em;
             height: 100%;
-            margin-left: 65em;
-            margin-top: 20px;
+            margin-left: 60%;
+            margin-top: 1%;
     }
 }
