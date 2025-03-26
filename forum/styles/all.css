@@ -7,7 +7,7 @@ Tablet: 768px até 992px
 Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 600px) {
     
 header{
     height: 120px;
@@ -52,4 +52,100 @@ section#lula{
     margin-left: 55em;
     margin-top: 20px;
 }
+}
+@media screen and (min-width: 768px) {
+    header{
+        height: 120px;
+        padding: 20px;
+        color: white;
+    }
+    header img{
+        border-radius: 100%;
+        width: 100px;
+    }
+    
+    header nav{
+        margin-left: 70em;
+        margin-top: -5em;
+    }
+    input{
+        margin-left: 70em;
+    }
+    section{
+        width: 50em;
+        height: 400px;
+        margin-left: 20px;
+        margin-top: 5em;
+        padding: 10px;
+    }
+    aside{
+        width: 27em;
+        height: 150px;
+        margin-left: 55em;
+        margin-top: -30em;
+        border-radius: 10px;
+    }
+    section#caixa2{
+        width: 26em;
+        height: 150px;
+        margin-left: 55em;
+        margin-top: 10px;
+    }
+    section#lula{
+        width: 26em;
+        height: 150px;
+        margin-left: 55em;
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 992px) {
+    header{
+        height: 50px;
+        width: 97vw;
+        padding: 50px;
+        color: white;
+    }
+    header img{
+        border-radius: 100%;
+        width: 100px;
+        margin-top: -29px;
+        display: flex;
+    }
+    header h1{
+        margin-top: -70px;
+        margin-left: 150px;
+    }
+    
+    nav{
+        margin-left: 70em;
+        margin-top: -5em;
+    }
+    input{
+        margin-left: 70em;
+        display: flex;
+    }
+    section{
+        width: 50em;
+        height: 400px;
+        margin-left: 20px;
+        margin-top: 5em;
+        padding: 10px;
+    }
+   
+    aside{
+    background-color: white;
+    padding: 10px;
+    }
+    aside#caixa1{
+        width: 30em;
+        height: 100%;
+        margin-left: 65em;
+        margin-top: -25em;
+    }
+    aside#caixa2{
+        width: 30em;
+        height: 100%;
+        margin-left: 65em;
+        margin-top: 20px;
+    }
 }
