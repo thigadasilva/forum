@@ -47,11 +47,10 @@ header nav{
 
 section p{
     width: 90vw;
-    height: 100vh;
+    height: 100%;
     background-color: white;
     margin-top: 1em;
     padding: 10px;
-    height: 400px;
 }
 
 
