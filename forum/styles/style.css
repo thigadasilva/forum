@@ -1,78 +1,42 @@
-@charset "UTF-8";
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Central da Lei</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/all.css" media="all">
+    <link rel="shortcut icon" href="styles/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="styles/WhatsApp Image 2025-02-27 at 10.14.18 AM.jpeg" alt="">
+        <h1>
+   Central da Lei
+    </h1>
+    <form action="">
+        <input type="search" name="Pesquise" id="pesquisa">
+    </form>
+</header>
+<nav>
+    <a href="#">login</a>
+</nav>
 
-/* Typical Device Breakpoints
-Pequenas telas: 600px max
-Celular: 600 até 768px
-Tablet: 768px até 992px
-Desktop: 992px até 1200px
-Grandes telas: acima de 1200px
-*/
-/* Mobile First */
-
-
-*{
-    margin: 0px;
-    padding: 0px;
-   font-family: Arial, Helvetica, sans-serif;
-   
-}
-
-body{
-    background-color: grey;
-}
-header{
-    background-color: #1B3319;
-    width: 100%;
-    padding: 25px;
-    text-shadow: 3px 1px 1px black;
-    color: white;
-    box-sizing: border-box;
-}
-header input{
-    display: none;
-}
-header img{
-    display: none;
-}
-nav a{
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    text-decoration: none;
-    padding: 15px;
-    width: 10%;
-    background-color: goldenrod;
-    border-radius: 10px;
-    margin-left: 75%;
-    margin-top: -4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-section p{
-    width: 80%;
-    height: 100%;
-    background-color: white;
-    margin-top: 3em;
-    margin-left: 40px;
-    padding: 10px;
-    border-radius: 10px;
-}
-aside{
-    background-color: white;
-    padding: 10px;
-    display: none;
-    }
-    aside#caixa1{
-        width: 30em;
-        height: 100%;
-        margin-left: 65em;
-        margin-top: -25em;
-    }
-    aside#caixa2{
-        width: 30em;
-        height: 100%;
-        margin-left: 65em;
-        margin-top: 20px;
-    }
-
-
+<section>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, veniam repellendus! Animi minus necessitatibus delectus cum officiis, dolore sed natus aspernatur ab id debitis dolorem harum eum nam, enim facilis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et nesciunt officia atque dolor. Molestiae nulla expedita accusantium recusandae laudantium saepe ipsa eum quasi perspiciatis, fugiat cumque, totam distinctio harum optio Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facilis dicta neque. Reiciendis suscipit fugiat dolores maiores adipisci omnis neque possimus aliquam? Asperiores, inventore nobis perferendis voluptates quia quos sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente facilis dignissimos iusto dolor minima voluptas ratione quam incidunt veniam possimus blanditiis temporibus corporis beatae corrupti, repellendus officia accusantium. Neque, beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit eos accusamus cumque! Facilis, sint. Iure exercitationem laborum praesentium repellendus dolor in culpa, dolore libero perspiciatis porro dolorem nihil nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quos officiis nesciunt provident, eos nam adipisci similique laudantium voluptatum itaque consectetur quod autem illo incidunt sapiente velit. Delectus, blanditiis quisquam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quaerat cumque officiis laudantium, error deserunt accusantium minima alias quidem earum. Voluptatibus facilis quos eligendi id illo facere mollitia placeat distinctio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum, eligendi accusamus a omnis maiores aperiam totam facilis est impedit assumenda reiciendis cum quam, eum praesentium cumque quia, qui vero? lorem
+    </p>
+</section>
+<aside id="caixa1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sint ipsam neque beatae sunt voluptatum voluptatem eos ut at excepturi maiores optio, voluptate eius dignissimos provident omnis, voluptas sapiente nihil?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fuga nobis ipsum cumque quae nulla quia nemo et minus? Ipsam sunt magni sed aperiam porro provident, quos voluptas temporibus est?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nobis aperiam dolore minus aliquam voluptatem, id ducimus, nam, placeat eos nemo unde eligendi beatae sit. Optio, eligendi. Nesciunt, quas minus.
+    </p>
+</aside>
+<aside id="caixa2">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur impedit ea dolor rem cum dolore esse perspiciatis, deserunt, eligendi facilis, fuga sit corrupti? Neque aliquam ad modi deserunt eius repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deserunt quidem temporibus soluta vitae, error, facilis deleniti ipsam, nesciunt beatae eveniet doloremque at reprehenderit. Dolore, sint. Et tempore obcaecati non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta porro minima commodi repudiandae repellat molestias laboriosam quidem. Sunt reprehenderit, adipisci animi laborum quae molestias molestiae, exercitationem delectus laboriosam ex facere?
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae asperiores dicta quaerat maiores modi error, numquam libero, evenietlaudantium ipsa, vel autem! Facilis maxime, quia molestiae illum odit commodi dolores?
+    </p>
+</aside>
+</body>
+</html>
