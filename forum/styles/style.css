@@ -21,7 +21,7 @@ body{
 }
 header{
     background-color: #1B3319;
-    width: 92vw;
+    width: 90vw;
     padding: 25px;
     text-shadow: 3px 1px 1px black;
     color: white;
@@ -32,26 +32,24 @@ header input{
 header img{
     display: none;
 }
-header a{
+nav a{
     color: white;
     text-shadow: 1px 1px 2px black;
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
     background-color: goldenrod;
     border-radius: 10px;
-}
-header nav{
     margin-left: 18em;
     margin-top: -1.5em;
 }
-
 section p{
-    width: 90vw;
+    width: 115%;
     height: 100%;
     background-color: white;
     margin-top: 1em;
     margin-left: 10px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 
