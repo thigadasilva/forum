@@ -33,25 +33,7 @@ section{
     margin-top: 5em;
     padding: 10px;
 }
-aside{
-    width: 27em;
-    height: 150px;
-    margin-left: 55em;
-    margin-top: -30em;
-    border-radius: 10px;
-}
-section#caixa2{
-    width: 26em;
-    height: 150px;
-    margin-left: 55em;
-    margin-top: 10px;
-}
-section#lula{
-    width: 26em;
-    height: 150px;
-    margin-left: 55em;
-    margin-top: 20px;
-}
+
 }
 @media screen and (min-width: 768px) {
     header{
@@ -78,25 +60,11 @@ section#lula{
         margin-top: 5em;
         padding: 10px;
     }
+}
+@media screen and (max-width: 991px) {
     aside{
-        width: 27em;
-        height: 150px;
-        margin-left: 55em;
-        margin-top: -30em;
-        border-radius: 10px;
-    }
-    section#caixa2{
-        width: 26em;
-        height: 150px;
-        margin-left: 55em;
-        margin-top: 10px;
-    }
-    section#lula{
-        width: 26em;
-        height: 150px;
-        margin-left: 55em;
-        margin-top: 20px;
-    }
+        display: none;
+    }    
 }
 @media screen and (min-width: 992px) {
     header{
@@ -131,21 +99,19 @@ section#lula{
         margin-top: 5em;
         padding: 10px;
     }
-   
-    aside{
-    background-color: white;
-    padding: 10px;
-    }
+  aside{
+    display: block;
+  }
     aside#caixa1{
-        width: 30em;
-        height: 100%;
-        margin-left: 65em;
-        margin-top: -25em;
-    }
+            width: 30em;
+            height: 100%;
+            margin-left: 65em;
+            margin-top: -25em;
+        }
     aside#caixa2{
-        width: 30em;
-        height: 100%;
-        margin-left: 65em;
-        margin-top: 20px;
+            width: 30em;
+            height: 100%;
+            margin-left: 65em;
+            margin-top: 20px;
     }
 }
