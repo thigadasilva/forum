@@ -21,9 +21,8 @@ body{
 }
 header{
     background-color: #1B3319;
-    height: 100%;
-    width: 84%;
-    padding: 40px;
+    width: 92vw;
+    padding: 30px;
     text-shadow: 3px 1px 1px black;
     color: white;
 }
@@ -43,40 +42,16 @@ header a{
 }
 header nav{
     margin-left: 20em;
-    margin-top: -1em;
+    margin-top: -1.5em;
 }
 
-section{
+section p{
     width: 90vw;
+    height: 100vh;
     background-color: white;
     margin-top: 1em;
     padding: 10px;
     height: 400px;
-}
-aside{
-    background-color: white;
-    width: 27em;
-    height: 150px;
-    margin-left: 55em;
-    margin-top: -30em;
-    border-radius: 10px;
-    display: none;
-}
-section#caixa2{
-    background-color: white;
-    width: 26em;
-    height: 150px;
-    margin-left: 55em;
-    margin-top: 10px;
-    display: none;
-}
-section#lula{
-    background-color: white;
-    width: 26em;
-    height: 150px;
-    margin-left: 55em;
-    margin-top: 20px;
-    display: none;
 }
 
 
