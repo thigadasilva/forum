@@ -43,7 +43,7 @@ nav a{
     margin-top: -1.5em;
 }
 section p{
-    width: 115%;
+    width: 80%;
     height: 100%;
     background-color: white;
     margin-top: 1em;
@@ -51,5 +51,22 @@ section p{
     padding: 10px;
     border-radius: 10px;
 }
+aside{
+    background-color: white;
+    padding: 10px;
+    display: none;
+    }
+    aside#caixa1{
+        width: 30em;
+        height: 100%;
+        margin-left: 65em;
+        margin-top: -25em;
+    }
+    aside#caixa2{
+        width: 30em;
+        height: 100%;
+        margin-left: 65em;
+        margin-top: 20px;
+    }
 
 
