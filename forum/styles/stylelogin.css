@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+Pequenas telas: 600px max
+Celular: 600 até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+/* Mobile First */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+body{
+    background-color: #1B3319;
+}
+a{
+color: white;
+text-decoration: none;
+text-align: center;
+}
+header{
+    text-align: center;
+    margin-top: 100px;
+}
+@media screen and (min-width: 992px) {
+    form{
+        margin: 15%;
+    }    
+    section{
+        background-color: white;
+        border-radius: 10px;
+        margin-left: 40vw;
+        margin-top: 4%;
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+    }
+    input#submit{
+        padding: 10px;
+        margin-left: 50px;
+    }
+   
+}
+@media screen and (max-width: 991px) {
+    form{
+        margin-left: 10%;
+        margin-top: 20%;
+    }    
+    section{
+        background-color: white;
+        border-radius: 10px;
+        margin-left: 19vw;
+        margin-top: 10%;
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+    }
+    input#submit{
+        padding: 10px;
+        margin-left: 80px;
+    }
+}
+
+
+
+
+
