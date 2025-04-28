@@ -44,7 +44,8 @@ legend{
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 991px) {
+
+@media screen and (max-width: 768px) {
     form{
         background-color: white;
         border-radius: 10px;
