@@ -30,13 +30,7 @@ header{
     margin-top: 100px;
 }
 
-.card-group > input{
-    border-radius: 5px;
-    border: 0.1px solid black;
-    width: 90%;
-    height: 30px;
-    padding: 5px;
-}
+
 legend{
     text-align: center;
     font-size: 2em;
@@ -76,6 +70,13 @@ legend{
 }
 
 @media screen and (min-width: 992px) {
+      .card-group > input{
+    border-radius: 5px;
+    border: 0.1px solid black;
+    width: 90%;
+    height: 30px;
+    padding: 5px;
+}
 
     form{
         background-color: white;
