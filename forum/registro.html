@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylelogin.css">
+    <title>Central da Lei</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Central da Lei</a></h1>
+    </header>   
+
+    <section>
+        <form action="login.html" method="post" name="Login">
+
+            <div class="card-group">
+                <label for="nome"><strong>Nome:</strong> </label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome:" required>
+                <br><br>
+            </div>
+            <div class="card-group">
+                <label for="email"><strong>Email:</strong> </label>
+                <input type="email" name="email" id="email" placeholder="email@gmail.com" required>
+                <br><br>
+            </div>
+            <div class="card-group">
+                <label for="senha" id="senha"><strong>Senha:</strong> </label>
+                <input type="password" name="senha" id="senha" placeholder="Senha:" required>
+                <br><br>
+            </div>
+            <div class="card-group">
+                <label for="data" id="data"><strong>Data de nascimento:</strong> </label>
+                <input type="date" name="data" id="data" required>
+                <br><br>
+            </div>
+            <a href="login.html" id="registro">Fazer login</a>
+            <input type="submit" value="Enviar" id="submit">
+        </form>
+    </section>
+</body>
+</html>
