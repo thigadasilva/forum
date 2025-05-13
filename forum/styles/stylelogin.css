@@ -25,6 +25,11 @@ color: white;
 text-decoration: none;
 text-align: center;
 }
+a#registro{
+    color: black;
+    font-weight: bold;
+    margin-left: 190px;
+}
 header{
     text-align: center;
     margin-top: 100px;
@@ -95,6 +100,7 @@ legend{
         color: white;
         border: 0px;
         outline: 0px;
+        margin-top: 15px;
     }
     input#submit:hover{
         cursor: pointer;
