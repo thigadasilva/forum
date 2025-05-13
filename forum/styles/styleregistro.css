@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+Pequenas telas: 600px max
+Celular: 600 até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+/* Mobile First */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+body{
+    background-color: #1B3319;
+}
+a{
+color: white;
+text-decoration: none;
+text-align: center;
+}
+a#registro{
+    color: black;
+    font-weight: bold;
+    margin-left: 190px;
+}
+header{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+legend{
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .card-group > input{
+    border-radius: 5px;
+    border: 0.1px solid black;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+}
+    form{
+        background-color: white;
+        border-radius: 10px;
+        margin-left: 5%;
+        margin-top: 10%;
+        width: 300px;
+        height: 400px;
+        padding: 15px;
+    }    
+
+    input#submit{
+        background-image: linear-gradient(to right, #1B3319, black);
+        width: 290px;
+        border-radius: 30px;
+        padding: 15px;
+        color: white;
+        border: 0px;
+        outline: 0px;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+      .card-group > input{
+    border-radius: 5px;
+    border: 0.1px solid black;
+    width: 90%;
+    height: 30px;
+    padding: 5px;
+}
+
+    form{
+        background-color: white;
+        border-radius: 10px;
+        margin-left: 38vw;
+        margin-top: 4%;
+        width: 300px;
+        padding: 15px;
+    }    
+    
+    input#submit{
+        background-image: linear-gradient(to right, #1B3319, black);
+        width: 100%;
+        border-radius: 30px;
+        padding: 15px;
+        color: white;
+        border: 0px;
+        outline: 0px;
+        margin-top: 15px;
+    }
+    input#submit:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to right,black,#1B3319);
+    }
+   
+}
+
+
+
+
+
