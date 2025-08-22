@@ -6,11 +6,10 @@
 html{
     font-size: 14px;
     font-family: sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: #FEFEFE;
 }
 body{
      background-color: rgb(0, 0, 0) !important;
+     color: #FEFEFE;
     }
 h1 > a{
     color: green;
@@ -271,3 +270,4 @@ footer{
     text-align: center;
 
 }
+
