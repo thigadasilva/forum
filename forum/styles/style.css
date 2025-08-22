@@ -8,7 +8,7 @@ html{
     font-family: sans-serif;
 }
 body{
-     background-color: rgb(0, 0, 0) !important;
+     background-color: rgb(0, 0, 0);
      color: #FEFEFE;
     }
 h1 > a{
@@ -270,4 +270,5 @@ footer{
     text-align: center;
 
 }
+
 
