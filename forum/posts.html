@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central da Lei</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ee647c4fea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <nav class="navegacao hide" id="navegacao">
+                <ul class="lista-nav">
+                    <span class="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                    <li class="nav-item">
+                        <a href="index.html">Inicio</a>
+                        <a href="#">Forum</a>
+                        <a href="#">Detalhes</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="marca">Central da Lei</div>
+            <div class="cadastro">
+                <a href="login.html">Login</a>
+                <a href="registro.html">Cadastrar-se</a>
+            </div>
+        </div>
+        <!--Barra de Pesquisa-->
+        <div class="pesquisa-box">
+
+            <div>
+                <select name="" id="">
+                    <option value="Tudo">Tudo</option>
+                    <option value="Tudo">Titulos</option>
+                    <option value="Tudo">Descrições</option>
+                </select>
+                <input type="text" name="p" id="" placeholder="Pesquise aqui...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+ 
+<div class="container">
+
+        <div class="navigate">
+            <span><a href="">MyForum - Forums</a> >> <a href="">random subforum</a></span>
+        </div>
+
+    <div class="posts-table">
+        <div class="table-head">
+            <div class="status">Status</div>
+            <div class="subjects">subjects</div>
+            <div class="replies">Replies</div>
+            <div class="last-reply">Last Reply</div>
+        </div>
+        <div class="table-row">
+            <div class="status"><i class="fa fa-fire"></i></div>
+            <div class="subjects">
+                <a href="">AAAAAAAAAAAAAAAA</a>
+            <br>
+            <span>Começado por <b><a href="">Usuário</a></b>.</span>
+            </div>
+            <div class="replies">
+                2 respostas <br>
+                125 visualizações.
+            </div>
+            <div class="last-reply">
+                12 de Outubro de 2025
+                <br>
+                Por <b><a href="#">Usuário</a></b>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <span>&copy; &nbsp;Central da Lei | Todos os direitos reservados.</span>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
