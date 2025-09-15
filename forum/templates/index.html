@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central da Lei</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+  
+    <!-- Menu Lateral para Desktop -->
+    <div class="desktop-sidebar" id="desktopSidebar">
+        <button class="close-btn" onclick="closeDesktopMenu()">&times;</button>
+        <div class="menu-header">
+            <img src="/static/img/logo.png">
+            <div class="logo-text">
+            <span class="central">CENTRAL</span>
+            <span class="da-lei">
+            <span class="line-left"></span>
+            DA LEI
+            <span class="line-right"></span>
+        </span>
+    </div>
+        </div>
+        <a href="#"><i class="fas fa-file-alt"></i> Posts</a>
+        <a href="#"><i class="fas fa-comments"></i> Forum</a>
+        <a href="#"><i class="fas fa-info-circle"></i> Detalhes</a>
+        <a href="#"><i class="fas fa-question-circle"></i> Ajuda</a>
+        <a href="#"><i class="fas fa-envelope"></i> Contato</a>
+        <a href="#"><i class="fas fa-gavel"></i> Jurisprudência</a>
+        <a href="#"><i class="fas fa-book"></i> Legislação</a>
+        <a href="#"><i class="fas fa-balance-scale"></i> Processos</a>
+    </div>
+
+    <!-- Menu Lateral para Mobile -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <button class="close-btn" onclick="closeMobileMenu()">&times;</button>
+        <div class="menu-header">
+            <h2>CENTRAL DA LEI</h2>
+        </div>
+        <a href="#"><i class="fas fa-file-alt"></i> Posts</a>
+        <a href="#"><i class="fas fa-comments"></i> Forum</a>
+        <a href="#"><i class="fas fa-info-circle"></i> Detalhes</a>
+        <a href="/login"><i class="fas fa-sign-in-alt"></i> Entrar</a>
+        <a href="/registro"><i class="fas fa-user-plus"></i> Cadastrar-se</a>
+        <a href="#"><i class="fas fa-question-circle"></i> Ajuda</a>
+        <a href="#"><i class="fas fa-envelope"></i> Contato</a>
+    </div>
+
+    <!-- Overlay para fechar o menu ao clicar fora -->
+    <div id="overlay" class="overlay" onclick="closeAllMenus()"></div>
+
+    <!-- Conteúdo Principal -->
+    <div class="main-content" id="mainContent">
+        <header>
+            <div class="navbar">
+                <!-- Botão Hamburguer para Desktop -->
+                <a href="#" class="desktop-menu-icon" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+                <!-- Botão Hamburguer para Mobile -->
+                <a href="#" class="bar-icon" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+                <div class="marca">
+                    <img src="/static/img/logo.png">
+                    <a href="/index">CENTRAL DA LEI</a>
+                </div>
+                <div class="pesquisa-box">
+                    <input type="text" placeholder="Pesquise aqui...">
+                     <i class="fas fa-search lupa-icon"></i>
+              </div>
+                <div class="user-menu">
+    {% if not session.usuario_logado %}
+        <a href="/registro" id="cad">Cadastrar-se</a>
+        <a href="/login" id="log">Entrar</a>
+    {% endif %}
+
+    {% if session.usuario_logado %}
+        <div class="user-info">
+            <img src="/static/uploads/avatars/{{ avatar }}" 
+                 alt="{{ session.usuario_logado }}" 
+                 class="user-avatar"
+                 onerror="this.src='/static/img/avatar-default.png'">
+            <div class="user-details">
+                <span class="user-greeting">Olá, {{ session.usuario_logado }}!</span>
+                <div class="user-links">
+                    <a href="/perfil" id="perfil">Meu perfil</a>
+                    <a href="/logout" id="sair"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</div>
+            </div>
+            
+            
+        </header>
+        
+        <div class="container">
+            <div class="forum-content">
+                <div class="subforum">
+                    <div class="subforum-titulo">
+                        <h1>Principal</h1>
+                    </div>
+                    <div class="subforum-linha">
+                        <div class="subforum-descricao">
+                            <h1><a href="#">Novas Leis Trabalhistas 2025</a></h1>
+                            <p>Discussão sobre as recentes alterações na legislação trabalhista brasileira.</p>
+                        </div>
+                        <div class="subforum-status">
+                            <span>24 posts | 15 Tópicos</span>
+                        </div>
+                        <div class="subforum-info">
+                            <b><a href="">Última Publicação</a></b> por <a href="">Carlinhos69</a>
+                            <br>
+                            em <small>22 Fev 2025</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subforum">
+                    <div class="subforum-titulo">
+                        <h1>Tópicos em Destaque</h1>
+                    </div>
+                    <div class="subforum-linha">
+                        <div class="subforum-descricao">
+                            <h1><a href="">Direito Civil e Consumerista</a></h1>
+                            <p>Discussões sobre leis civis, direitos do consumidor e relações contratuais.</p>
+                        </div>
+                        <div class="subforum-status">
+                            <span>152 posts | 43 Tópicos</span>
+                        </div>
+                        <div class="subforum-info">
+                            <b><a href="">Última Publicação</a></b> por <a href="">MariaSilva</a>
+                            <br>
+                            em <small>15 Mar 2025</small>
+                        </div>
+                    </div>
+                    
+                    <div class="subforum-linha">
+                        <div class="subforum-descricao">
+                            <h1><a href="">Direito Penal e Processual</a></h1>
+                            <p>Debates sobre leis penais, processos criminais e jurisprudência.</p>
+                        </div>
+                        <div class="subforum-status">
+                            <span>98 posts | 32 Tópicos</span>
+                        </div>
+                        <div class="subforum-info">
+                            <b><a href="">Última Publicação</a></b> por <a href="">DrRoberto</a>
+                            <br>
+                            em <small>10 Mar 2025</small>
+                        </div>
+                    </div>
+                    
+                    <div class="subforum-linha">
+                        <div class="subforum-descricao">
+                            <h1><a href="">Direito Trabalhista e Previdenciário</a></h1>
+                            <p>Questões relacionadas a leis trabalhistas, CLT e previdência social.</p>
+                        </div>
+                        <div class="subforum-status">
+                            <span>127 posts | 38 Tópicos</span>
+                        </div>
+                        <div class="subforum-info">
+                            <b><a href="">Última Publicação</a></b> por <a href="">AnaAdvogada</a>
+                            <br>
+                            em <small>18 Mar 2025</small>
+                        </div>
+                    </div>
+                    
+                    <div class="subforum-linha">
+                        <div class="subforum-descricao">
+                            <h1><a href="">Direito Tributário e Empresarial</a></h1>
+                            <p>Discussões sobre impostos, obrigações fiscais e direito empresarial.</p>
+                        </div>
+                        <div class="subforum-status">
+                            <span>84 posts | 27 Tópicos</span>
+                        </div>
+                        <div class="subforum-info">
+                            <b><a href="">Última Publicação</a></b> por <a href="">CarlosContador</a>
+                            <br>
+                            em <small>21 Mar 2025</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="sidebar-box">
+                    <h5>Dúvidas do Mês</h5>
+                    <h6>O Estado prevê punição para isso?</h6>
+                    <h6>Eu posso processar meu vizinho?</h6>
+                    <h6>Eu posso representar a mim mesmo?</h6>
+                    <h6>Como funciona o direito de arrependimento?</h6>
+                    <h6>Posso ser responsabilizado por dívidas de familiares?</h6>
+                </div>
+                <div class="sidebar-box">
+                    <h5>Dúvidas da Semana</h5>
+                    <h6>Fui processado e agora?</h6>
+                    <h6>Fui assediada pelo meu chefe e agora?</h6>
+                    <h6>A Receita Federal pode me pegar?</h6>
+                    <h6>Como contestar uma multa de trânsito?</h6>
+                    <h6>Quais os direitos do inquilino?</h6>
+                </div>
+                <div class="sidebar-box">
+                    <h5>Estatísticas do Fórum</h5>
+                    <h6>Usuários online: 243</h6>
+                    <h6>Total de tópicos: 1.210</h6>
+                    <h6>Total de posts: 5.369</h6>
+                    <h6>Novos hoje: 47</h6>
+                    <h6>Membros: 42.755</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="forum-info">
+            <div class="chart">
+                Central da Lei - Status <i class="fas fa-chart-bar"></i>
+            </div>
+            <div>
+                <span><u>5,369</u> posts em <u>1.210</u> tópicos por <u>42.755</u> usuários.</span>
+                <span>Último post: <b><a href="#">Novas leis trabalhistas</a></b> em 21 ago 2025 por <a href="#">Advogado2025</a></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/main.js"></script>
+    </script>
+</body>
+</html>
