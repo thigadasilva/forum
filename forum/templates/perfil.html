@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Central da Lei</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="/static/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/perfil.css"> <!-- CSS específico para perfil -->
+</head>
+<body>
+
+    <!-- Menu Lateral para Desktop -->
+    <div class="desktop-sidebar" id="desktopSidebar">
+        <button class="close-btn" onclick="closeDesktopMenu()">&times;</button>
+        <div class="menu-header">
+            <img src="/static/img/logo.png">
+            <div class="logo-text">
+                <span class="central">CENTRAL</span>
+                <span class="da-lei">
+                    <span class="line-left"></span>
+                    DA LEI
+                    <span class="line-right"></span>
+                </span>
+            </div>
+        </div>
+        <a href="/index"><i class="fas fa-home"></i> Início</a>
+        <a href="#"><i class="fas fa-file-alt"></i> Meus Posts</a>
+        <a href="#"><i class="fas fa-comments"></i> Minhas Respostas</a>
+        <a href="#"><i class="fas fa-heart"></i> Favoritos</a>
+        <a href="#"><i class="fas fa-cog"></i> Configurações</a>
+        <a href="/logout"><i class="fas fa-sign-out-alt"></i> Sair</a>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="main-content" id="mainContent">
+        <header>
+            <div class="navbar">
+                <a href="#" class="desktop-menu-icon" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+                <a href="#" class="bar-icon" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+                <div class="marca">
+                    <img src="/static/img/logo.png">
+                    <a href="/index">CENTRAL DA LEI</a>
+                </div>
+                <div class="pesquisa-box">
+                    <input type="text" placeholder="Pesquise aqui...">
+                    <i class="fas fa-search lupa-icon"></i>
+                </div>
+                <div class="cadastro">
+                    <span class="user-name">Olá, {{ session.usuario_logado }}!</span>
+                    <a href="/logout" class="btn-sair">Sair</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="perfil-container">
+            <!-- Cabeçalho do Perfil -->
+            <div class="perfil-header">
+                <div class="perfil-avatar">
+     <img src="/static/uploads/avatars/{{ avatar }}" 
+                 alt="{{ session.usuario_logado }}" 
+                 class="user-avatar"
+                 onerror="this.src='/static/img/avatar-default.png'">
+    <form id="avatarForm" action="/upload_avatar" method="POST" enctype="multipart/form-data">
+        <input type="file" id="fileInput" name="foto" accept="image/*" style="display: none;">
+        <button type="button" class="btn-alterar-foto" onclick="document.getElementById('fileInput').click()">
+            <i class="fas fa-camera"></i>
+        </button>
+    </form>
+</div>
+
+                <div class="perfil-info">
+                    <h1>{{ session.usuario_logado }}</h1>
+                    <p class="perfil-email">{{ session.email }}</p>
+                    <p class="perfil-membro">Membro desde: {{ data_cadastro }}</p>
+                </div>
+                <div class="perfil-stats">
+                    <div class="stat">
+                        <span class="stat-number">24</span>
+                        <span class="stat-label">Posts</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">156</span>
+                        <span class="stat-label">Respostas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">89</span>
+                        <span class="stat-label">Likes</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Abas de Navegação -->
+            <div class="perfil-tabs">
+                <button class="tab-btn active" onclick="openTab('tab-posts')">
+                    <i class="fas fa-file-alt"></i> Meus Posts
+                </button>
+                <button class="tab-btn" onclick="openTab('tab-respostas')">
+                    <i class="fas fa-comments"></i> Minhas Respostas
+                </button>
+                <button class="tab-btn" onclick="openTab('tab-favoritos')">
+                    <i class="fas fa-heart"></i> Favoritos
+                </button>
+                <button class="tab-btn" onclick="openTab('tab-config')">
+                    <i class="fas fa-cog"></i> Configurações
+                </button>
+            </div>
+
+            <!-- Conteúdo das Abas -->
+            <div class="perfil-content">
+                <!-- Tab: Meus Posts -->
+                <div id="tab-posts" class="tab-content active">
+                    <h3>Últimos Posts</h3>
+                    <div class="post-item">
+                        <h4><a href="#">Novas leis trabalhistas em 2025</a></h4>
+                        <p>Discussão sobre as recentes alterações na legislação trabalhista brasileira...</p>
+                        <div class="post-meta">
+                            <span>Em: Direito Trabalhista</span>
+                            <span>•</span>
+                            <span>15 respostas</span>
+                            <span>•</span>
+                            <span>2 dias atrás</span>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <h4><a href="#">Como contestar uma multa de trânsito</a></h4>
+                        <p>Guia completo para contestar multas de trânsito de forma eficaz...</p>
+                        <div class="post-meta">
+                            <span>Em: Direito do Trânsito</span>
+                            <span>•</span>
+                            <span>8 respostas</span>
+                            <span>•</span>
+                            <span>1 semana atrás</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Minhas Respostas -->
+                <div id="tab-respostas" class="tab-content">
+                    <h3>Últimas Respostas</h3>
+                    <div class="resposta-item">
+                        <p>"Concordo com sua análise, porém é importante considerar o artigo 483 da CLT..."</p>
+                        <div class="resposta-meta">
+                            <span>Em: <a href="#">Novas leis trabalhistas</a></span>
+                            <span>•</span>
+                            <span>1 dia atrás</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Favoritos -->
+                <div id="tab-favoritos" class="tab-content">
+                    <h3>Tópicos Favoritados</h3>
+                    <div class="favorito-item">
+                        <h4><a href="#">Direito do Consumidor - Novos direitos</a></h4>
+                        <span>Adicionado: 3 dias atrás</span>
+                    </div>
+                </div>
+
+                <!-- Tab: Configurações -->
+                <div id="tab-config" class="tab-content">
+                    <h3>Configurações da Conta</h3>
+                    <form class="config-form">
+                        <div class="form-group">
+                            <label>Nome de exibição</label>
+                            <input type="text" value="{{ session.usuario_logado }}">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" value="{{ session.email }}" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label>Alterar Senha</label>
+                            <input type="password" placeholder="Nova senha">
+                        </div>
+                        <button type="submit" class="btn-salvar">Salvar Alterações</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/perfil.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script>
+    // Auto-submit quando selecionar arquivo
+    document.getElementById('fileInput').addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            // Mostra preview
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('avatarImage').src = e.target.result;
+            }
+            reader.readAsDataURL(this.files[0]);
+            
+            // Envia o formulário
+            document.getElementById('avatarForm').submit();
+        }
+    });
+</script>
+</body>
+</html>

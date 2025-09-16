@@ -1,0 +1,8 @@
+Flask → framework web que roda o servidor e gerencia rotastemplates.
+
+pip install flask
+
+
+mysql-connector-python → driver oficial do MySQL para Python.
+
+pip install mysql-connector-python
