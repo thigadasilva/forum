@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.titulo }} - Central da Lei</title>
+    <link rel="stylesheet" href="../static/css/posts.css">
+    <link rel="stylesheet" href="../static/css/ver_posts.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/posts">← Voltar para Artigos</a>
+        
+        <div class="post-detalhe">
+            <div class="post-header">
+               <img src="../static/uploads/avatars/{{ post.autor_avatar if post.autor_avatar else 'avatar-default.png' }}" 
+                             alt="{{ post.autor_nome }}" 
+                             class="autor-avatar"
+                             onerror="this.src='/static/img/avatar-default.png'">
+                <div class="autor-info">
+                    <strong>{{ post.autor_nome }}</strong>
+                    <span>{{ post.data_criacao.strftime('%d/%m/%Y %H:%M') }}</span>
+                </div>
+            </div>
+            
+            <h1>{{ post.titulo }}</h1>
+            
+            {% if post.imagem %}
+            <img src="../static/uploads/posts/{{ post.imagem }}" alt="Imagem do post" class="post-image-detalhe">
+            {% endif %}
+            
+            <div class="post-conteudo">
+                {{ post.conteudo|replace('\n', '<br>')|safe }}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
